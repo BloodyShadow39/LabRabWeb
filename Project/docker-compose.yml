@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  php:
+    image: php:8.2-fpm
+    container_name: php
+    volumes:
+      - ./src:/var/www/html
+
+  nginx:
+    image: nginx:1.25.5
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./compose/nginx/config:/etc/nginx/conf.d

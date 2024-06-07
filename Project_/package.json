@@ -1,0 +1,13 @@
+{
+  "name": "testforlabrab1",
+  "version": "1.0.0",
+  "description": "labrab1",
+  "main": "index.js",
+  "scripts": {},
+  "author": "rotin aleksandr 2pm",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2"
+  }
+}
